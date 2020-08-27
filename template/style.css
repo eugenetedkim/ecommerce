@@ -1,0 +1,125 @@
+/*Convert font-size to be used with rem instead of px*/
+html {
+  font-size: 62.5%; /* Default font size in the browser is 16px. Multiply 16px * 62.5% = 10px = 1rem. Use rem instead of pixels because it is better for different size browsers.*/
+  box-sizing: border-box; /*helps us to better format boxes like divs and set the width, padding, and margin for them.*/
+}
+
+body {
+  font: 1.6rem Helvetica; /*1.6rem * 16px = 25.6px*/
+  height: 100vh; /*viewport height*/
+  margin: 0; /*set it to 0 because the browser sets a margin*/
+}
+
+.grid-container {
+  display: grid; /*set new style of layout in the html document*/
+  grid-template-areas: /*set the grid template area to 3 areas*/
+    "header"
+    "main"
+    "footer";
+  /*Set the grid area columns and rows*/
+  grid-template-columns: 1fr; /*for grid template columns, set it to 1 fragment for 1 column*/
+  grid-template-rows: 5rem 1fr 5rem; /*We have 3 grid template set the height to 5rem (50px) for the header, 1 fragment for main, and 5rem (80px) for the footer*/
+  /*Cover the whole height of the view port*/
+  height: 100%;
+}
+
+/*Navigation bar*/
+.header {
+  grid-area: header;
+  display: flex; /*Put site title on the left and links/menus on the right side*/
+  background-color: #000000;
+  color: #00be3f;
+  justify-content: space-between; /*Have stuff on the left and stuff on the right*/
+  align-items: center; /*align text to be horizontally centered*/
+  padding: 1.5rem; /*Brung in the text items a little closer as to create space between it and the screen edge on the left and right sides of the html document*/
+}
+
+.brand a {
+  color: #00be3f;
+  font-size: 2.5rem; /*40px*/
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-links a:hover {
+  color: #00be3f;
+}
+/*Navigation bar END*/
+
+/*Main Content Area*/
+.main {
+  grid-area: main;
+}
+
+/*Footer area*/
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center; /*have stuff centered*/
+  background-color: #000000;
+  color: #00be3f;
+  align-items: center; /*align text to be horizontally centered*/
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00be3f;
+}
+
+/*Home Screen*/
+/*Collective Product List Format*/
+.products {
+  display: flex; /*Show list of items next to each other*/
+  justify-content: center; /*make center vertically*/
+  align-items: center; /*make center horiontally*/
+  flex-wrap: wrap; /*makes the contents wrap around the screen (responsive) instead of going to the right horizontally forever*/
+}
+
+/*Individual Product Details Format*/
+.products li {
+  list-style-type: none; /*Remove bullet point*/
+  padding: 0;
+  flex: 0 1 34rem; /*0 for flex grow, 1 for flex shrink, 34rem for width*/
+  margin: 1rem;
+  height: 50rem;
+  border-bottom: 0.1rem #c0c0c0 solid;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product-image {
+  max-width: 34rem;
+  max-height: 34rem;
+}
+
+.product-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.product-brand {
+  font-size: 1.2rem;
+  color: #808080;
+}
+
+.product-price {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.product-rating {
+  margin-bottom: 1rem;
+}
