@@ -1,7 +1,8 @@
 # ecommerce
 
 This is a current project to build an ecommerce website in React simulating a general security business.
-Demo: 
+
+Demo: https://eugenestore.herokuapp.com/
 
 To Execute Code:
 1) Download zip and extract
