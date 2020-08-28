@@ -4,7 +4,7 @@
 <span>UNDER HEAVY CONSTRUCTION</span>
 <h5>EXPECTED COMPLETION DATE: October 31, 2020</h5>
 
-Built using:
+<em>Built using</em>:
 1. HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox
 2. React: Components, Props, Events, Hooks, Router, Axios
 3. Redux: Store, Reducers, Actions
@@ -13,7 +13,7 @@ Built using:
 6. Development: ESLint, Babel, Git, Github, 
 7. Deployment: Heroku
 
-Demo: https://eugenestore.herokuapp.com/
+<em>Demo</em>: https://eugenestore.herokuapp.com/
 
 To Execute Code:
 1) Download zip and extract
