@@ -49,9 +49,31 @@ body {
   color: rgba(50, 229, 100, 1);
 }
 
+.brand-name button {
+  font-size: 3rem; /*18px*/
+  padding: 0.5rem; /*6px*/
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.brand-name button:visited {
+  background: none;
+}
+
+.brand-name button:hover {
+  color: rgba(50, 229, 100, 1);
+}
+
 .header-links a {
   color: #ffffff;
   text-decoration: none;
+  padding: 1rem;
+}
+
+.header-links a:visited {
+  color: #ffffff;
 }
 
 .header-links a:hover {
@@ -63,17 +85,6 @@ body {
 .main {
   grid-area: main;
 }
-
-/*Footer area*/
-.footer {
-  grid-area: footer;
-  display: flex;
-  justify-content: center; /*have stuff centered*/
-  background-color: #292828;
-  color: rgba(50, 229, 100, 1);
-  align-items: center; /*align text to be horizontally centered*/
-}
-/*Footer area endd*/
 
 a {
   text-decoration: none;
@@ -143,34 +154,16 @@ a:hover {
 /*Home Screen End*/
 
 /*Sidebar*/
-.brand-name button {
-  font-size: 3rem; /*18px*/
-  padding: 0.5rem; /*6px*/
-  background: none;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.brand-name button:visited {
-  background: none;
-}
-
-.brand-name button:hover {
-  color: rgba(30, 137, 60, 1);
-}
-
 .sidebar {
   position: fixed; /*Keep on top of the screen*/
+  transition: all 0.4s;
 
   /*Keep the sidebar on the left-side out of the screen*/
   transform: translateX(-30rem);
   width: 30rem;
 
-  background-color: rgba(30, 137, 60, 0.9);
+  background-color: rgba(30, 137, 60, 1);
   height: 100%;
-
-  top: 5rem; /*Move sidebar down below grid template header row area of 5rem*/
 }
 
 .sidebar li {
@@ -205,3 +198,14 @@ a:hover {
   color: rgba(30, 137, 60, 1);
 }
 /*Sidebar End*/
+
+/*Footer area*/
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center; /*have stuff centered*/
+  background-color: #292828;
+  color: rgba(50, 229, 100, 1);
+  align-items: center; /*align text to be horizontally centered*/
+}
+/*Footer area endd*/

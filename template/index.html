@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Eugene's Security Shop</title>
+    <title>Eugene's Security</title>
   </head>
   <body>
     <div class="grid-container">
       <!--Header Grid Template Area-->
       <header class="header">
-        <!--Brand Logo-->
-        <div class="brand">
-          <a href="index.html">Eugene's Security Shop</a>
+        <!--Sidebar Button/Brand Name-->
+        <div class="brand-name">
+          <button onclick="openMenu()">
+            <!--this is a js function so scroll down to the scripts at the bottom of the code-->
+            <!--ASCII code for the hamgurger menu-->
+            &#9776;
+          </button>
+          <a href="index.html">Eugene's Security</a>
         </div>
-        <!--Brand Logo End-->
+        <!--Sidebar Button/Brand Name End-->
         <!--Navigation Links-->
         <div class="header-links">
           <a href="signin.html">Sign in</a>
@@ -24,23 +29,142 @@
       </header>
       <!--Header Grid Template Area End-->
 
-      <!--Navigation Drawer-->
-      <aside>Shopping Categories</aside>
-      <!--Navigation Drawer End-->
+      <!--Sidebar-->
+      <aside class="sidebar">
+        <h3>Categories</h3>
+        <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+        <ul>
+          <li><a href="index.html">Surveillance</a></li>
+          <li><a href="index.html">Protection</a></li>
+        </ul>
+      </aside>
+      <!--Sidebar End-->
 
       <!--Main Grid Template Area-->
       <main class="main">
         <div class="content">
           <!--Bulleted List of Products-->
           <ul class="products">
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Background Hd, Vortex, Vortex Razor Hd Spotting Scope,
+                    Binoculars, Vortex Optics, Roof Prism, Vortex Optics
+                    Diamondback Binocular, Green
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-cap.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Night vision device Binocular vision Thermographic camera
+                    Binoculars, Binoculars
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/binoculars.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Binoculars Optics Telescope Spotting Scopes, binocular
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/spotting.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Spotting Scopes Eyepiece Viewing instrument Low-dispersion
+                    glass Nikon Monarch ATB 10x42 DCF, Binoculars
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/thermographic.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Thermographic camera Monocular Night vision Pulsar Thermal
+                    energy, binocular vision
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -51,16 +175,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -71,16 +197,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -91,16 +219,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -111,16 +241,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -131,16 +263,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -151,16 +285,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -171,16 +307,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -191,16 +329,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -211,16 +351,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -231,16 +373,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -251,16 +395,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -271,16 +417,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -291,16 +439,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -311,16 +461,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -331,16 +483,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -351,16 +505,18 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
             <li>
-              <!--Product details-->
               <div class="product">
-                <img
-                  class="product-image"
-                  src="images/product.jpg"
-                  alt="product"
-                />
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
                 <div class="product-name">
                   <a href="">
                     Security Camera System (Send Photos from Rasberry Pi via MMS
@@ -371,9 +527,1944 @@
                 <div class="product-price">$120</div>
                 <div class="product-rating">4.5 Stars (10 Reviews)</div>
               </div>
-              <!--Product details End-->
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
             </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
+            <!--Individual Product details-->
+            <li>
+              <div class="product">
+                <a href="">
+                  <img
+                    class="product-image"
+                    src="images/night-vision.png"
+                    alt="product"
+                  />
+                </a>
+                <div class="product-name">
+                  <a href="">
+                    Security Camera System (Send Photos from Rasberry Pi via MMS
+                    Text Message)
+                  </a>
+                </div>
+                <div class="product-brand">Eugene Security Company</div>
+                <div class="product-price">$120</div>
+                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+              </div>
+            </li>
+            <!--Individual Product details End-->
           </ul>
           <!--Bulleted List of Products End-->
         </div>
@@ -384,5 +2475,15 @@
       <footer class="footer">All rights reserved.</footer>
       <!--Footer Grid Template Area End-->
     </div>
+
+    <script>
+      function openMenu() {
+        document.querySelector(".sidebar").classList.add("open");
+      }
+
+      function closeMenu() {
+        document.querySelector(".sidebar").classList.remove("open");
+      }
+    </script>
   </body>
 </html>
