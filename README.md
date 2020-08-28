@@ -1,6 +1,6 @@
 <h1>Welcome to my Security Shop</h1>
 <h3>Here to service all your risk mitigation and preparedness needs!</h3>
-
+<em>Demo</em>: https://eugenestore.herokuapp.com/
 <span>UNDER HEAVY CONSTRUCTION</span>
 <h5>EXPECTED COMPLETION DATE: October 31, 2020</h5>
 
@@ -12,8 +12,6 @@
 5. MongoDB: Mongoose, Aggregation
 6. Development: ESLint, Babel, Git, Github, 
 7. Deployment: Heroku
-
-<em>Demo</em>: https://eugenestore.herokuapp.com/
 
 To Execute Code:
 1) Download zip and extract
