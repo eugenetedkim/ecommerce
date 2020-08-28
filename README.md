@@ -1,7 +1,8 @@
-<h1>Welcome to my Security Shop.</h1>
+<h1>Welcome to my Security Shop</h1>
 <h3>Here to service all your risk mitigation and preparedness needs!</h3>
 
-UNDER HEAVY CONSTRUCTION. EXPECTED COMPLETION DATE: October 31, 2020
+<span>UNDER HEAVY CONSTRUCTION</span>
+<h5>EXPECTED COMPLETION DATE: October 31, 2020</h5>
 
 Skills:
 1. HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox
