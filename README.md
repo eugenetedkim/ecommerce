@@ -1,6 +1,7 @@
 # ecommerce
 
-This is a current project to build an ecommerce website in React simulating a general security business.
+Welcome to my Security Shop.
+Here to service all your risk mitigation and preparedness needs!
 
 Demo: https://eugenestore.herokuapp.com/
 
