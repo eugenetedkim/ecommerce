@@ -4,7 +4,7 @@
 <span>UNDER HEAVY CONSTRUCTION</span>
 <h5>EXPECTED COMPLETION DATE: October 31, 2020</h5>
 
-<u>Build using:</u>
+Built using:
 1. HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox
 2. React: Components, Props, Events, Hooks, Router, Axios
 3. Redux: Store, Reducers, Actions
