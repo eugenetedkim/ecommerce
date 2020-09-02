@@ -207,5 +207,12 @@ a:hover {
   background-color: #292828;
   color: rgba(50, 229, 100, 1);
   align-items: center; /*align text to be horizontally centered*/
+
+  /*Fixed Footer Settings*/
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /*Fixed Footer Settings*/
 }
 /*Footer area endd*/
